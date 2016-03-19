@@ -9,8 +9,11 @@ group :production do
   gem 'pg'
   gem 'rails_12factor'
 end
+
 # Use bootstrap 
 gem 'bootstrap-sass', '~> 3.3.6'
+# Font Awesome
+gem 'font-awesome-sass', '~> 4.5.0'
 # Use SCSS for stylesheets
 gem 'sass-rails', '~> 5.0'
 # Use Uglifier as compressor for JavaScript assets
