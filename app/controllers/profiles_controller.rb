@@ -19,7 +19,19 @@ class ProfilesController < ApplicationController
     
     def edit
         @user = User.find( params[:user_id] )
-        @profile = @user.build_profile()
+        @profile = @user.profile
+    end
+    
+    def update
+        @user = User.find( params[:user_id] )
+        @profile = @user.build_profile(profile_params)
+        if @profile.save
+            flash[:success] = "Profile Updated!"
+            redirect_to user_path( params[:user_id] )
+        else
+            flash[:danger] = "No Way! Please shck the form."
+            render action: :new
+        end
     end
 
     private
