@@ -12,7 +12,7 @@ class ProfilesController < ApplicationController
             flash[:success] = "Profile Updated!"
             redirect_to user_path( params[:user_id] )
         else
-            flash[:danger] = "No Way! Please shck the form."
+            flash[:danger] = "No Way! Please check the form."
             render action: :new
         end
     end
@@ -29,7 +29,7 @@ class ProfilesController < ApplicationController
             flash[:success] = "Profile Updated!"
             redirect_to user_path( params[:user_id] )
         else
-            flash[:danger] = "No Way! Please shck the form."
+            flash[:danger] = "No Way! Please check the form."
             render action: :new
         end
     end
