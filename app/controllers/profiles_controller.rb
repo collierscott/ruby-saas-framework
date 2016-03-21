@@ -24,13 +24,13 @@ class ProfilesController < ApplicationController
     
     def update
         @user = User.find( params[:user_id] )
-        @profile = @user.build_profile(profile_params)
-        if @profile.save
+        @profile = @user.profile
+        if @profile.update_attributes(profile_params)
             flash[:success] = "Profile Updated!"
             redirect_to user_path( params[:user_id] )
         else
             flash[:danger] = "No Way! Please check the form."
-            render action: :new
+            render action: :edit
         end
     end
 
