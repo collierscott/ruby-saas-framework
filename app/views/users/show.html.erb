@@ -18,7 +18,7 @@
         <i class="fa fa-envelope-o profile-info-icon"></i><%= @user.profile.contact_email %><br/>
       </div>
     <% end %>
-    <% if current_user %>
+    <% if current_user.id == @user.id %>
         <div class="text-right">
           <%= link_to "Edit My Profile",  edit_user_profile_path(user_id: current_user.id), class: 'btn btn-primary' %>
         </div>
