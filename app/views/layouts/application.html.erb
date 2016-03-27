@@ -35,8 +35,12 @@
             <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">My Account <span class="caret"></span></a>
             <ul class="dropdown-menu">
               <li><li><%= link_to "Edit My Account", edit_user_registration_path %></li></li>
-              <li><%= link_to "Edit your profile", edit_user_profile_path(user_id: current_user.id) %></li>
-              <li><%= link_to "View your profile", user_path(current_user) %></li>
+              <% if current_user.profile %>
+                <li><%= link_to "Edit your profile", edit_user_profile_path(user_id: current_user.id) %></li>
+                <li><%= link_to "View your profile", user_path(current_user) %></li>
+              <% else %>
+                <li><%= link_to "Create your profile", new_user_profile_path(current_user) %></li>
+              <% end %>
               <li class="text-center"><%= button_to "Sign Out", destroy_user_session_path, method: :delete, class: 'btn btn-primary btn-sm navbar-btn' %></li>
             </ul>
           </li>
