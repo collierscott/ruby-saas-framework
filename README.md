@@ -1,5 +1,3 @@
-== README
-
 # Onlinespaces Ruby SaaS framework
 Created by Scott Collier [Onlinespaces](http://www.onlinespaces.com)
 
@@ -11,7 +9,7 @@ This is a starter framework for a SaaS (Software as a Service) application writt
 - Stripe API to accept payments
 
 ## Gems Used (some of them)
-- botstrap-sass
+- bootstrap-sass
 - font-awesome-sass
 - sass-rails
 - uglifier
