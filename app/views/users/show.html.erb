@@ -1,6 +1,6 @@
 <div class="row">
   <div class="col-md-3 text-center">
-    <%= image_tag @user.profile.avatar.url, :class => "avatar-image" %>
+    <%= image_tag @user.profile.avatar.url, :class => "avatar-image circle" %>
   </div>
   <div class="col-md-6">
     <h1><%= @user.profile.first_name %> <%= @user.profile.last_name %></h1>
@@ -11,7 +11,7 @@
         <%= @user.profile.description %>
       </div>
     <% end %>
-    <% if current_user.plan_id != 2 %>
+    <% if current_user.plan_id == 2 %>
       <h3>Contact Information</h3>
       <i class="fa fa-phone profile-info-icon"></i><%= @user.profile.phone_number %><br/>
       <i class="fa fa-envelope-o profile-info-icon"></i><%= @user.profile.contact_email %><br/>

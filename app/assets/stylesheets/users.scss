@@ -12,6 +12,10 @@
 
 .avatar-image {
     border-radius: 10px;
+        
+    &.circle {
+        border-radius: 50%;
+    }
 }
 
 .well.profile-description {
