@@ -1,5 +1,3 @@
-== README
-
 # Onlinespaces Ruby SaaS framework
 Created by Scott Collier [Onlinespaces](http://www.onlinespaces.com)
 
