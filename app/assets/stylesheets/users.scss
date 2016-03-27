@@ -15,6 +15,15 @@
     
     height: 128px;
     width: 128px;
+    
+    &.small {
+        height: 64px;
+        width: 64px;
+    }
+    
+    &.edit-form-avatar{
+        margin-bottom: 5px;
+    }
         
     &.circle {
         border-radius: 50%;
