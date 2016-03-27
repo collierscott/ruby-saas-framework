@@ -22,5 +22,7 @@ module Workspace
 
     # Do not swallow errors in after_commit/after_rollback callbacks.
     config.active_record.raise_in_transactional_callbacks = true
+    config.action_mailer.default_url_options = { host: 'whispering-depths-62478.herokuapp.com' }
+    #config.action_mailer.default_url_options = { host: '0.0.0.0:8080' }
   end
 end
