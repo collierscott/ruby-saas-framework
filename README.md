@@ -3,6 +3,9 @@ Created by Scott Collier [Onlinespaces](http://www.onlinespaces.com)
 
 This is a starter framework for a SaaS (Software as a Service) application written using Ruby On Rails.
 
+You can see this site @ https://whispering-depths-62478.herokuapp.com/. This is running on a free Heroku account. 
+So, if you get an error when visting the page for the first time, please refresh the page as the server has probably been put to sleep.
+
 ## Features
 - User account creation and management
 - User profile management (Create and modify)
